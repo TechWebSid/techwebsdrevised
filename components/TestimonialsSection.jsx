@@ -2,14 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { 
-  Star, 
-  CheckCircle2, 
-  TrendingUp, 
-  Sparkles, 
-  ExternalLink, 
-  ShieldCheck, 
-  Globe 
+import {
+  Star,
+  Quote,
+  CheckCircle2,
+  TrendingUp,
+  Sparkles,
+  ExternalLink,
+  ShieldCheck,
+  Globe
 } from "lucide-react";
 
 export default function TestimonialsSection() {
@@ -83,7 +84,7 @@ export default function TestimonialsSection() {
       <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-sky-100/40 rounded-full blur-[130px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 sm:px-10 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 border-b border-slate-200/80 pb-8">
           <div className="max-w-2xl">
@@ -136,6 +137,7 @@ export default function TestimonialsSection() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="group relative rounded-3xl p-7 sm:p-8 bg-white/95 backdrop-blur-md border border-slate-200/90 shadow-[0_4px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_50px_rgba(105,56,239,0.08)] hover:border-purple-300 transition-all duration-300 flex flex-col justify-between"
             >
+
               <div>
                 {/* Metric Badge & Stars */}
                 <div className="flex items-center justify-between gap-2 mb-5">
@@ -143,9 +145,9 @@ export default function TestimonialsSection() {
                     <TrendingUp className="w-3.5 h-3.5 text-purple-600" />
                     {item.metric}
                   </span>
-                  <div className="flex items-center gap-1 text-amber-400 flex-shrink-0">
+                  <div className="flex items-center gap-1 text-amber-400">
                     {[...Array(item.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
                     ))}
                   </div>
                 </div>
