@@ -199,6 +199,7 @@ function BentoServiceCard({ svc }) {
         <div className="lg:col-span-3 flex lg:justify-end items-center h-full">
           <Link
             href="/contact"
+            prefetch={true}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-100 text-slate-900 group-hover:bg-[#111319] group-hover:text-white font-bold text-xs uppercase tracking-wider transition-all shadow-sm"
           >
             <span>Get Free Estimate</span>
@@ -292,6 +293,7 @@ export default function ServicesSection() {
             </p>
             <Link
               href="/services"
+              prefetch={true}
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#6938ef] hover:text-purple-700 transition-colors"
             >
               <span>View All Service Options</span>

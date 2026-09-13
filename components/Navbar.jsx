@@ -1,14 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight, MessageCircle } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const { scrollYProgress } = useScroll();
 
   const scaleX = useSpring(scrollYProgress, {
@@ -25,6 +26,24 @@ export default function Navbar() {
     { label: "Contact", href: "/contact" },
   ];
 
+  // Eagerly prefetch all routes in the background for 0ms instantaneous navigation
+  useEffect(() => {
+    const prefetchRoutes = () => {
+      navLinks.forEach((link) => {
+        router.prefetch(link.href);
+      });
+      router.prefetch("/contact");
+    };
+
+    if (typeof window !== "undefined") {
+      if ("requestIdleCallback" in window) {
+        window.requestIdleCallback(prefetchRoutes);
+      } else {
+        setTimeout(prefetchRoutes, 50);
+      }
+    }
+  }, [router]);
+
   return (
     <header className="fixed top-4 sm:top-5 left-0 right-0 z-50 flex justify-center px-4 sm:px-8 pointer-events-none">
       <div className="relative w-full max-w-5xl pointer-events-auto">
@@ -37,6 +56,9 @@ export default function Navbar() {
             {/* Logo: TechWebSid Custom Web & Tech Mark */}
             <Link
               href="/"
+              prefetch={true}
+              onMouseEnter={() => router.prefetch("/")}
+              onTouchStart={() => router.prefetch("/")}
               className="flex items-center gap-2.5 group"
             >
               <div className="relative w-8 h-8 rounded-xl bg-gradient-to-br from-[#6938ef] via-[#7c3aed] to-[#9333ea] flex items-center justify-center text-white shadow-md shadow-purple-600/30 group-hover:scale-105 transition-transform">
@@ -68,6 +90,9 @@ export default function Navbar() {
                   <Link
                     key={link.label}
                     href={link.href}
+                    prefetch={true}
+                    onMouseEnter={() => router.prefetch(link.href)}
+                    onTouchStart={() => router.prefetch(link.href)}
                     className={`relative transition-colors duration-200 hover:text-slate-950 py-1 ${
                       isActive ? "text-[#6938ef] font-bold" : ""
                     }`}
@@ -101,6 +126,9 @@ export default function Navbar() {
               {/* Vedonyx-Inspired Dark Pill CTA Button */}
               <Link
                 href="/contact"
+                prefetch={true}
+                onMouseEnter={() => router.prefetch("/contact")}
+                onTouchStart={() => router.prefetch("/contact")}
                 className="group relative inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-[#11131a] hover:bg-[#1f2333] text-white shadow-md shadow-slate-900/10 hover:shadow-purple-500/20 active:scale-95 transition-all duration-300"
               >
                 <span>Request Proposal</span>
@@ -152,6 +180,8 @@ export default function Navbar() {
                   <Link
                     key={link.label}
                     href={link.href}
+                    prefetch={true}
+                    onTouchStart={() => router.prefetch(link.href)}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`flex items-center justify-between py-2 text-sm font-bold transition-colors ${
                       pathname === link.href ? "text-[#6938ef]" : "text-slate-800 hover:text-[#6938ef]"
@@ -175,6 +205,8 @@ export default function Navbar() {
 
                   <Link
                     href="/contact"
+                    prefetch={true}
+                    onTouchStart={() => router.prefetch("/contact")}
                     onClick={() => setMobileMenuOpen(false)}
                     className="flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#11131a] text-white font-bold text-xs shadow-md"
                   >

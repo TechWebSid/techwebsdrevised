@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -217,13 +218,14 @@ export default function ServicesPage() {
                     </div>
 
                     <div className="pt-2 flex justify-end">
-                      <a
+                      <Link
                         href="/contact"
+                        prefetch={true}
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#111319] text-white hover:bg-[#6938ef] font-bold text-xs uppercase tracking-wider transition-all shadow-md active:scale-95"
                       >
                         <span>Inquire for {svc.title.split(" ")[0]}</span>
                         <ArrowUpRight className="w-4 h-4" />
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -273,13 +275,14 @@ export default function ServicesPage() {
 
           {/* CTA Row */}
           <div className="mt-16 text-center">
-            <a
+            <Link
               href="/contact"
+              prefetch={true}
               className="inline-flex items-center gap-3 px-9 py-4 rounded-full bg-white text-slate-950 hover:bg-purple-400 hover:text-slate-950 font-bold text-sm uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-xl"
             >
               <span>Book Your Sprint Slot</span>
               <ArrowUpRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
 
         </div>

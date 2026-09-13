@@ -120,6 +120,7 @@ export default function TrustMetricsBar() {
 
           <Link
             href="/contact"
+            prefetch={true}
             className="flex-shrink-0 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-purple-300 transition-all duration-200 active:scale-95 shadow-lg group"
           >
             <span>Talk With Siddharth</span>

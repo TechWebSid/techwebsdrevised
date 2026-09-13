@@ -190,6 +190,7 @@ export default function TheGapComparison() {
               <div className="mt-8 pt-5 border-t border-purple-400/20">
                 <Link
                   href="/contact"
+                  prefetch={true}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full bg-white text-slate-950 hover:bg-purple-400 hover:text-slate-950 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all active:scale-95 shadow-lg shadow-white/10"
                 >
                   <span>Work Directly With Siddharth</span>

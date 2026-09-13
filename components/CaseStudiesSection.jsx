@@ -152,6 +152,7 @@ export default function CaseStudiesSection() {
             </p>
             <Link
               href="/work"
+              prefetch={true}
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-400 hover:text-white transition-colors"
             >
               <span>View All 5 Projects with Details</span>
@@ -273,6 +274,7 @@ export default function CaseStudiesSection() {
         <div className="mt-12 text-center">
           <Link
             href="/work"
+            prefetch={true}
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-black text-xs sm:text-sm tracking-wide shadow-lg shadow-purple-600/30 transition-all active:scale-95"
           >
             <span>See Full Case Studies & Live Links on Work Page</span>

@@ -112,6 +112,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
+              prefetch={true}
               className="px-7 py-3.5 rounded-full bg-white text-slate-950 hover:bg-purple-400 hover:text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-all duration-200 active:scale-95 shadow-lg shadow-white/10"
             >
               Get A Free Quote
@@ -131,7 +132,7 @@ export default function Footer() {
           
           {/* Col 1 & 2: Brand Info */}
           <div className="lg:col-span-2 space-y-3">
-            <Link href="/" className="text-2xl font-black tracking-tight text-white">
+            <Link href="/" prefetch={true} className="text-2xl font-black tracking-tight text-white">
               TechWeb<span className="text-[#6938ef]">Sid</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
@@ -148,7 +149,7 @@ export default function Footer() {
             <ul className="space-y-2 text-slate-400 text-xs sm:text-sm">
               {navLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="hover:text-white transition-colors">
+                  <Link href={link.href} prefetch={true} className="hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>

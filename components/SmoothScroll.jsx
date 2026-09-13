@@ -42,10 +42,13 @@ export default function SmoothScroll({ children }) {
     };
   }, []);
 
-  // Smooth reset to top on route transition
+  // Instant reset to top on route transition with zero stutter
   useEffect(() => {
     if (lenisRef.current) {
       lenisRef.current.scrollTo(0, { immediate: true });
+    }
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
   }, [pathname]);
 

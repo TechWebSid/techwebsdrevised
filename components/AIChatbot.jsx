@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Bot,
@@ -514,15 +515,27 @@ export default function AIChatbot() {
                     {/* Rich Action Button if attached */}
                     {msg.action && (
                       <div className="mt-3 pt-2.5 border-t border-white/10">
-                        <a
-                          href={msg.action.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-semibold shadow-md shadow-emerald-500/25 transition-all transform hover:scale-[1.02]"
-                        >
-                          {msg.action.label}
-                          <ArrowUpRight className="w-3.5 h-3.5" />
-                        </a>
+                        {msg.action.url.startsWith("/") ? (
+                          <Link
+                            href={msg.action.url}
+                            prefetch={true}
+                            onClick={() => setIsOpen(false)}
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-semibold shadow-md shadow-emerald-500/25 transition-all transform hover:scale-[1.02]"
+                          >
+                            {msg.action.label}
+                            <ArrowUpRight className="w-3.5 h-3.5" />
+                          </Link>
+                        ) : (
+                          <a
+                            href={msg.action.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white text-xs font-semibold shadow-md shadow-emerald-500/25 transition-all transform hover:scale-[1.02]"
+                          >
+                            {msg.action.label}
+                            <ArrowUpRight className="w-3.5 h-3.5" />
+                          </a>
+                        )}
                       </div>
                     )}
                   </div>

@@ -224,6 +224,7 @@ export default function PricingAndModels() {
               <div className={`mt-8 pt-5 border-t ${model.highlight ? 'border-slate-800' : 'border-slate-100'}`}>
                 <Link
                   href="/contact"
+                  prefetch={true}
                   className={`w-full inline-flex items-center justify-center gap-2 py-3.5 rounded-full font-bold text-xs sm:text-sm uppercase tracking-wider transition-all active:scale-95 shadow-md ${
                     model.highlight
                       ? 'bg-white text-slate-950 hover:bg-purple-400'

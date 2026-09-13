@@ -280,6 +280,7 @@ export default function HeroSection() {
           <div className="w-full sm:w-auto p-[1.5px] rounded-full bg-gradient-to-r from-purple-600 via-fuchsia-500 to-sky-400 shadow-[0_10px_30px_rgba(105,56,239,0.25)] hover:shadow-[0_15px_45px_rgba(105,56,239,0.4)] transition-all">
             <Link
               href="/contact"
+              prefetch={true}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#111319] text-white font-black text-sm sm:text-base tracking-wide hover:bg-[#1a1e2a] transition-all active:scale-95 group"
             >
               <span>Get A Free Website Quote</span>
@@ -543,6 +544,7 @@ export default function HeroSection() {
                 <div className="pt-2">
                   <Link
                     href="/work"
+                    prefetch={true}
                     className="inline-flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-purple-300 transition-colors"
                   >
                     <span>View all 5 live projects with direct links</span>

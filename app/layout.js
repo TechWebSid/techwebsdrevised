@@ -2,6 +2,7 @@ import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import AIChatbot from "@/components/AIChatbot";
+import TopProgressBar from "@/components/TopProgressBar";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -169,6 +170,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-[#fafafa] text-[#0f111a] selection:bg-[#6938ef] selection:text-white">
+        <TopProgressBar />
         <SmoothScroll>
           {children}
           <AIChatbot />

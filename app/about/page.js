@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -239,12 +240,13 @@ export default function AboutPage() {
               <h3 className="text-2xl font-black text-white">Ready to collaborate directly with Siddharth?</h3>
               <p className="text-sm text-slate-400 mt-1">Reserve a dedicated sprint slot before Q2 bookings close.</p>
             </div>
-            <a
+            <Link
               href="/contact"
+              prefetch={true}
               className="px-8 py-4 rounded-full bg-white text-slate-950 hover:bg-purple-400 font-bold text-xs sm:text-sm uppercase tracking-wider transition-all active:scale-95 shadow-lg flex-shrink-0"
             >
               Request Proposal
-            </a>
+            </Link>
           </div>
         </div>
       </section>

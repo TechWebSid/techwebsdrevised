@@ -354,6 +354,7 @@ export default function WorkPage() {
 
             <Link
               href="/contact"
+              prefetch={true}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white text-slate-950 font-black text-xs sm:text-sm hover:bg-slate-200 transition-all"
             >
               <span>Get Free Estimate</span>
