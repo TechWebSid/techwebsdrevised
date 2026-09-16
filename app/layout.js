@@ -21,8 +21,8 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL("https://techwebsid.in"),
   title: {
-    default: "TechWebSid® — Website Developer in Lucknow | Modern Websites That Grow Your Business",
-    template: "%s | TechWebSid®",
+    default: "TechWebSid — Website Developer in Lucknow | Modern Websites That Grow Your Business",
+    template: "%s | TechWebSid",
   },
   description:
     "TechWebSid is a digital studio founded by Siddharth Srivastava in Lucknow, UP. We design and build fast, modern websites, online stores, and portals that help local businesses and companies win more paying clients.",
