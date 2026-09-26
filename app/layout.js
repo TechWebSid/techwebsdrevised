@@ -21,7 +21,7 @@ const outfit = Outfit({
 export const metadata = {
   metadataBase: new URL("https://techwebsid.in"),
   title: {
-    default: "TechWebSid — Website Developer in Lucknow | Modern Websites That Grow Your Business",
+    default: "TechWebSid — Website Developer in Lucknow | Modern Website That Grow Your Business",
     template: "%s | TechWebSid",
   },
   description:
@@ -55,7 +55,7 @@ export const metadata = {
     canonical: "https://techwebsid.in",
   },
   openGraph: {
-    title: "TechWebSid® — Modern Websites That Turn Visitors Into Paying Clients",
+    title: "TechWebSid — Modern Websites That Turn Visitors Into Paying Clients",
     description:
       "Whether you need a clean website for your local business or an online store, I design fast, stunning websites that bring real customers. Partner directly with Siddharth Srivastava in Lucknow.",
     url: "https://techwebsid.in",
