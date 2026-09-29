@@ -34,7 +34,7 @@ export default function AIChatbot() {
     {
       id: "welcome-1",
       sender: "bot",
-      text: "Hello there! 👋 I'm **TechWebSid AI** — your direct guide to Siddharth's web studio in Lucknow.\n\nI can instantly answer anything about our **website packages, pricing, timelines, or recommend the best setup** for your business. What are you looking to build?",
+      text: "Hello there! 👋 I'm **TechWebSid AI** — your direct guide to Siddharth's web studio in India.\n\nI can instantly answer anything about our **website packages, pricing, timelines, or recommend the best setup** for your business. What are you looking to build?",
       time: "Just now",
       suggestions: SUGGESTED_QUERIES.slice(0, 4),
     },
@@ -147,7 +147,7 @@ export default function AIChatbot() {
       q.includes("medical")
     ) {
       return {
-        text: "🏥 **Clinics, Doctors & Professional Practices**:\n\nWe build high-trust websites for consultants and practices (such as *Astro Ashutosh Divyadarshi* - https://www.astroashutoshdivyadarshi.com/). Key benefits:\n\n• **1-Click WhatsApp & Phone Appointment Booking**: Direct calls from mobile clients in seconds.\n• **Google Maps Local SEO**: Your business ranks when clients search locally in Lucknow and beyond.\n• **High-Trust Reviews & Credentials**: Reassures new visitors instantly.\n• **Under 1s Page Loading**: Never lose an anxious patient or client to a slow, frozen website.",
+        text: "🏥 **Clinics, Doctors & Professional Practices**:\n\nWe build high-trust websites for consultants and practices (such as *Astro Ashutosh Divyadarshi* - https://www.astroashutoshdivyadarshi.com/). Key benefits:\n\n• **1-Click WhatsApp & Phone Appointment Booking**: Direct calls from mobile clients in seconds.\n• **Google Maps & Local Search SEO**: Your business ranks when clients search in your target cities and regions.\n• **High-Trust Reviews & Credentials**: Reassures new visitors instantly.\n• **Under 1s Page Loading**: Never lose an anxious patient or client to a slow, frozen website.",
         action: {
           label: "📱 Discuss Your Website with Siddharth",
           url: "https://wa.me/918957035412?text=Hi%20Siddharth,%20I'd%20like%20to%20discuss%20a%20website%20for%20my%20practice/business.",
@@ -225,7 +225,7 @@ export default function AIChatbot() {
       q.includes("talk")
     ) {
       return {
-        text: "📞 **Direct Contact Details for Siddharth**:\n\n• **WhatsApp & Phone**: [+91 89570 35412](https://wa.me/918957035412)\n• **Email**: [techwebsid@gmail.com](mailto:techwebsid@gmail.com)\n• **Location**: Lucknow, Uttar Pradesh, India\n• **Typical Reply Time**: Within 30 minutes on WhatsApp!\n\nClick the button below to start a quick chat right now:",
+        text: "📞 **Direct Contact Details for Siddharth**:\n\n• **WhatsApp & Phone**: [+91 89570 35412](https://wa.me/918957035412)\n• **Email**: [techwebsid@gmail.com](mailto:techwebsid@gmail.com)\n• **Location**: India (Collaborating remotely with clients worldwide)\n• **Typical Reply Time**: Fast response within a few hours on WhatsApp / Email!\n\nClick the button below to start a quick chat right now:",
         action: {
           label: "💬 Open WhatsApp Chat (+91 89570 35412)",
           url: "https://wa.me/918957035412?text=Hi%20Siddharth,%20I%20found%20your%20website%20and%20would%20like%20to%20chat.",
@@ -233,18 +233,19 @@ export default function AIChatbot() {
       };
     }
 
-    // 8. Location / Where / Lucknow / Meet / In person
+    // 8. Location / Where / India / Remote / Timezone / In person
     if (
-      q.includes("lucknow") ||
+      q.includes("india") ||
       q.includes("location") ||
       q.includes("where") ||
       q.includes("office") ||
       q.includes("meet") ||
       q.includes("city") ||
-      q.includes("state")
+      q.includes("country") ||
+      q.includes("timezone")
     ) {
       return {
-        text: "📍 **Studio Headquarters & Service Area**:\n\nTechWebSid is based in **Lucknow, Uttar Pradesh, India**.\n\nWe collaborate with clients locally across Lucknow, Kanpur, and UP, as well as businesses across India (Delhi NCR, Mumbai, Bangalore) and worldwide (USA, UK, UAE, Australia). We communicate smoothly via WhatsApp, Google Meet, and phone.",
+        text: "📍 **Studio Headquarters & Remote Delivery**:\n\nTechWebSid is based in **India**.\n\nWe collaborate seamlessly with clients across India as well as businesses worldwide (USA, UK, Europe, UAE, Australia, Canada, Singapore). We communicate smoothly via WhatsApp, Google Meet, Slack, and email, accommodating global timezones with ease.",
         action: {
           label: "☕ Schedule a Quick Intro Call",
           url: "https://wa.me/918957035412?text=Hi%20Siddharth,%20can%20we%20schedule%20a%20quick%20intro%20call%20about%20my%20project?",

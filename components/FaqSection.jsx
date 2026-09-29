@@ -14,8 +14,13 @@ export default function FaqSection() {
   const faqs = [
     {
       category: "Getting Started",
-      q: "I run a small local business. Is my project too simple or small for you?",
-      a: "Not at all! Whether you need a clean 3-page website for your clinic, a local store showcase, a salon booking site, or a custom company platform, every client gets the exact same care, polish, and direct founder attention. No project is 'too small'.",
+      q: "Do you work with international clients outside India?",
+      a: "Yes, absolutely! We regularly partner with founders, businesses, and agencies across the United States, UK, Europe, Australia, UAE, and Canada. We communicate smoothly asynchronously and synchronously via WhatsApp, Slack, and Google Meet, accommodating your timezone with zero friction.",
+    },
+    {
+      category: "Getting Started",
+      q: "I run a startup or growing business. Is my project too simple or small for you?",
+      a: "Not at all! Whether you need a clean 3-page site for your consultancy, an online store showcase, a booking platform, or a custom company platform, every client gets the exact same care, polish, and direct founder attention.",
     },
     {
       category: "Timeline & Process",
@@ -30,22 +35,22 @@ export default function FaqSection() {
     {
       category: "Getting Started",
       q: "Will my website load fast on mobile phones and rank on Google?",
-      a: "Yes, guaranteed. Over 75% of your customers visit from phones, so we build mobile-first to ensure your site opens in under 1 second on mobile data. We also configure local Google SEO tags and Google Maps details so customers searching in your area can discover you easily.",
+      a: "Yes, guaranteed. Over 75% of your customers visit from phones, so we build mobile-first to ensure your site opens in under 1 second on mobile data globally. We also configure Google SEO metadata and structured tags so customers searching for your services can discover you easily.",
     },
     {
       category: "Timeline & Process",
       q: "Who will I be talking to during the project?",
-      a: "You communicate 100% directly with Siddharth Srivastava (founder & engineer) via WhatsApp, phone calls, or Google Meet. There are no account managers, no confusing telephone games, and no delays in getting answers.",
+      a: "You communicate 100% directly with Siddharth Srivastava (founder & engineer) via WhatsApp, Slack, phone calls, or Google Meet. There are no account managers, no confusing telephone games, and no delays in getting answers.",
     },
     {
       category: "Pricing & Ownership",
       q: "What if I need changes or help after the website goes live?",
-      a: "Every project comes with 30 days of free post-launch support for any tweaks, minor text updates, and guidance. Even after that, I am always just a quick WhatsApp message away whenever your business grows and needs new pages.",
+      a: "Every project comes with 30 days of free post-launch support for any tweaks, minor text updates, and guidance. Even after that, I am always just a quick message away whenever your business grows and needs new pages.",
     },
     {
       category: "Pricing & Ownership",
-      q: "How does payment work?",
-      a: "We work on a fair, risk-free milestone model: 50% upfront to begin work and reserve your sprint, and the remaining 50% only when the website is finished, tested, and you are 100% satisfied with the outcome. We accept UPI (GPay, PhonePe, Paytm), bank wire, and international cards.",
+      q: "How does payment work for domestic and international clients?",
+      a: "We work on a fair, risk-free milestone model: 50% upfront to reserve your sprint, and the remaining 50% only when the website is finished, tested, and you are 100% satisfied with the outcome. We accept international cards (via Stripe), international bank wire transfers, and domestic UPI (GPay, PhonePe, Paytm).",
     },
   ];
 

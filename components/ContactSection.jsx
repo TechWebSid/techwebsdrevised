@@ -84,7 +84,7 @@ export default function ContactSection() {
                 <span className="text-xs font-bold uppercase tracking-widest text-purple-400">Direct Founder Channel</span>
                 <h3 className="text-2xl font-black text-white mt-0.5">Siddharth Srivastava</h3>
                 <p className="text-sm text-slate-300 mt-1.5 leading-relaxed">
-                  Founder & Full-Stack Engineer. Based in Lucknow, UP — building high-performing websites for clients worldwide.
+                  Founder & Full-Stack Engineer. Based in India — building high-performing websites for clients worldwide.
                 </p>
               </div>
 
@@ -123,7 +123,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Studio Location</div>
-                    <div className="text-xs sm:text-sm font-semibold text-white">Lucknow, Uttar Pradesh • Working Remotely Worldwide</div>
+                    <div className="text-xs sm:text-sm font-semibold text-white">India • Seamless Remote Collaboration for Global Clients</div>
                   </div>
                 </div>
 

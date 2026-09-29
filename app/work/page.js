@@ -47,7 +47,7 @@ export default function WorkPage() {
         "1-Click WhatsApp appointment booking for instant horoscopes",
         "Kundli analysis, gemstones, matchmaking & Vastu service showcases",
         "High-trust sacred aesthetic with golden celestial styling",
-        "Ranked on Google Local Search for astrological consultations"
+        "Ranked on Google Search for astrological and spiritual consultations"
       ],
       tags: ["Astrology Platform", "WhatsApp Booking", "Kundli Analysis", "Mobile First", "Google SEO"],
       gradient: "from-[#20150a] via-[#2c1d0d] to-[#140e06]",
@@ -337,7 +337,7 @@ export default function WorkPage() {
               Want a high-converting website like these for your business?
             </h3>
             <p className="text-xs sm:text-sm text-slate-300 mt-1">
-              Work 1-on-1 directly with Siddharth in Lucknow. Fast 2 to 3 weeks delivery with zero agency runaround.
+              Work 1-on-1 directly with Siddharth in India. Fast 2 to 3 weeks delivery with zero agency runaround.
             </p>
           </div>
 

@@ -148,7 +148,7 @@ function BentoServiceCard({ svc }) {
             <div className="mt-4 p-3 rounded-2xl bg-purple-50/60 border border-purple-200/80 flex items-center justify-between gap-3 text-xs">
               <div className="flex items-center gap-2 font-bold text-purple-900">
                 <CreditCard className="w-3.5 h-3.5 text-purple-600" />
-                <span>Instant UPI • GPay • PhonePe • Cards</span>
+                <span>Global Cards • Stripe • Apple Pay • UPI</span>
               </div>
               <span className="px-2.5 py-0.5 rounded-full bg-white text-emerald-700 font-black border border-emerald-200 text-[11px]">
                 0.3s Checkout
@@ -217,28 +217,28 @@ export default function ServicesSection() {
     {
       id: "{01}",
       category: "Local & Professional",
-      title: "High-Trust Websites That Bring Direct Calls & Inquiries",
+      title: "High-Trust Websites That Bring Direct Inquiries & Clients",
       description:
-        "Designed to make your business look credible, established, and premium. Comes with 1-click WhatsApp buttons, direct phone call triggers, customer reviews, and local Google SEO so nearby customers find you first.",
+        "Designed to make your business look credible, established, and premium. Comes with 1-click WhatsApp/chat buttons, direct inquiry triggers, client reviews, and global/regional Google SEO so target customers discover you first.",
       icon: Building2,
-      tags: ["Local Google SEO", "1-Click WhatsApp", "Direct Call Buttons", "Mobile Optimized", "Customer Reviews"],
-      topTicker: ["Google Local Search", "Direct WhatsApp Leads", "Mobile First", "Doctor & Clinic Websites", "Salon & Spa Websites", "Real Estate Portals"],
-      bottomTicker: ["Instant Phone Calls", "100% Satisfaction", "Loads Under 1s", "Customer Trust Proof", "Clean Modern Layout", "No Monthly Fees"],
+      tags: ["Target Google SEO", "1-Click Direct Chat", "Mobile Optimized", "Client Proof", "Clean Modern Layout"],
+      topTicker: ["Google Search SEO", "Direct Client Leads", "Mobile First", "Consulting Websites", "High-Converting Portals", "Professional Brands"],
+      bottomTicker: ["Instant Inquiries", "100% Satisfaction", "Loads Under 1s", "Customer Trust Proof", "Clean Modern Layout", "No Monthly Fees"],
       iconGradient: "from-indigo-600 to-purple-600",
-      bestFor: "Clinics, Doctors, Salons, Law Firms, Contractors & Local Services",
+      bestFor: "Startups, Consultancies, Professional Practices, Agencies & Local Services",
     },
     {
       id: "{02}",
       category: "E-Commerce & Retail",
       title: "Fast Online Stores That Turn Browsers Into Paying Customers",
       description:
-        "Clean, mobile-first shopping experience with frictionless checkout. Supports instant UPI (GPay, PhonePe, Paytm), debit/credit cards, and Cash on Delivery with instant WhatsApp order notifications.",
+        "Clean, mobile-first shopping experience with frictionless checkout. Supports international debit/credit cards (Stripe), Apple Pay, instant UPI, and global payment gateways with automated order notifications.",
       icon: ShoppingBag,
-      tags: ["Instant UPI & Card Checkout", "Product Catalog", "WhatsApp Order Alerts", "Mobile Shopping", "Fast Search"],
-      topTicker: ["Instant UPI Payments", "Fast Product Search", "Zero Checkout Friction", "Automated WhatsApp Alerts", "Mobile Shopping", "Discount Codes"],
+      tags: ["Global & UPI Checkout", "Product Catalog", "Instant Order Alerts", "Mobile Shopping", "Fast Search"],
+      topTicker: ["Global Card Checkout", "Fast Product Search", "Zero Checkout Friction", "Automated Order Alerts", "Mobile Shopping", "Discount Codes"],
       bottomTicker: ["Higher Order Conversion", "Smooth Mobile Cart", "Secure Transactions", "Easy Catalog Updates", "Order Tracking", "No Monthly Commission"],
       iconGradient: "from-purple-600 to-fuchsia-600",
-      bestFor: "Clothing Brands, Food & Dining, Retail Shops & Product Sellers",
+      bestFor: "Clothing Brands, Retail Shops, Digital Products & E-Commerce Brands",
     },
     {
       id: "{03}",

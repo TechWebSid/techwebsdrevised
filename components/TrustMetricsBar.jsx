@@ -12,8 +12,8 @@ export default function TrustMetricsBar() {
   const tickerItems = [
     "Modern Design Tailored To Your Brand",
     "Loads in Under 1 Second on Phones",
-    "1-Click WhatsApp & Call Buttons",
-    "Google Local Search Optimization",
+    "1-Click Direct Chat & Inquiries",
+    "Google Search & SEO Optimization",
     "100% Full Ownership • No Lock-Ins",
     "Zero Hidden Monthly Agency Fees",
     "Built Personally By Siddharth",
@@ -21,8 +21,8 @@ export default function TrustMetricsBar() {
   ];
 
   const businessStats = [
-    { label: "Websites Delivered", value: "45+", unit: "Projects", status: "Across India & Abroad", color: "text-purple-400" },
-    { label: "Mobile Loading Speed", value: "<1.0", unit: "sec", status: "Instant on 4G / 5G", color: "text-emerald-400" },
+    { label: "Websites Delivered", value: "45+", unit: "Projects", status: "India & International", color: "text-purple-400" },
+    { label: "Mobile Loading Speed", value: "<1.0", unit: "sec", status: "Instant on 4G / 5G / WiFi", color: "text-emerald-400" },
     { label: "Satisfaction Guarantee", value: "100", unit: "%", status: "Refined Until You Love It", color: "text-sky-400" },
     { label: "Average Delivery Time", value: "2 - 3", unit: "weeks", status: "Fast & On-Schedule", color: "text-amber-400" },
   ];

@@ -100,7 +100,7 @@ export default function Footer() {
               {currentTime && (
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 text-slate-300 text-xs font-mono font-medium border border-slate-700">
                   <Clock className="w-3.5 h-3.5 text-purple-400" />
-                  Lucknow, India: {currentTime} IST
+                  India (IST / UTC+5:30): {currentTime}
                 </span>
               )}
             </div>
@@ -136,7 +136,7 @@ export default function Footer() {
               TechWeb<span className="text-[#6938ef]">Sid</span>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Modern websites built directly by Siddharth Srivastava in Lucknow, UP. Delivering fast, beautiful, high-converting digital experiences for clients worldwide.
+              High-performance websites and digital products crafted directly by Siddharth Srivastava in India. Partnering with ambitious businesses and founders worldwide.
             </p>
             <div className="text-xs text-slate-400 pt-1 font-medium">
               Siddharth Srivastava • Founder & Lead Engineer
@@ -205,7 +205,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © {new Date().getFullYear()} TechWebSid®. Built with care in Lucknow, Uttar Pradesh.
+            © {new Date().getFullYear()} TechWebSid. Built with care in India • Serving Global Clients.
           </div>
           <div className="flex items-center gap-6">
             <span>Loads in &lt;1s on Phones</span>

@@ -94,7 +94,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 text-base sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal"
           >
-            TechWebSid was founded by Siddharth Srivastava in Lucknow, India, out of frustration with bloated, bureaucratic agencies that charge enterprise fees for mediocre WordPress templates. We bridge brutal full-stack software logic with cinematic, revenue-driving aesthetics.
+            TechWebSid was founded by Siddharth Srivastava in India out of frustration with bloated, bureaucratic agencies that charge enterprise fees for mediocre templates. We bridge brutal full-stack software logic with cinematic, revenue-driving aesthetics for clients worldwide.
           </motion.p>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
               <div className="mt-4 flex items-center gap-2 text-xs text-slate-400">
                 <MapPin className="w-4 h-4 text-purple-400" />
-                <span>Lucknow, Uttar Pradesh, India • Global Client Delivery</span>
+                <span>India • Global Remote Delivery (US, UK, Europe & Worldwide)</span>
               </div>
             </div>
 

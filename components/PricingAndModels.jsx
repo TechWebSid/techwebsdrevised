@@ -11,8 +11,8 @@ export default function PricingAndModels() {
   const featureOptions = [
     { title: "Mobile-Optimized Custom Design", weeks: 1 },
     { title: "1-Click WhatsApp & Direct Call Buttons", weeks: 0.5 },
-    { title: "Google Local Search (SEO) & Maps Setup", weeks: 0.5 },
-    { title: "Online Store & UPI / Card Checkout", weeks: 1.5 },
+    { title: "Google Search (SEO) & Regional Discovery", weeks: 0.5 },
+    { title: "Online Store & Global Checkout (Stripe, UPI, Cards)", weeks: 1.5 },
     { title: "Automated Appointment / Booking Form", weeks: 1 },
     { title: "Lightning-Fast Mobile Speed (<1s)", weeks: 0.5 },
   ];
@@ -35,15 +35,15 @@ export default function PricingAndModels() {
   const models = [
     {
       title: "Complete Business Website",
-      subtitle: "For Local Businesses, Clinics, Shops & Services",
+      subtitle: "For Startups, Modern Businesses & Professional Services",
       timeline: "2 - 3 Weeks Delivery",
-      desc: "Everything your business needs to establish strong credibility, rank on Google, and convert visitors into direct phone calls and WhatsApp inquiries.",
+      desc: "Everything your business needs to establish strong credibility, rank on Google, and convert visitors into direct phone calls, emails, and inquiries.",
       guarantee: "100% Satisfaction Guarantee: We refine and polish your website until you are 100% proud of how it represents your business.",
       features: [
         "Custom modern design tailored to your brand (No cookie-cutter templates)",
-        "Instant <1s load time on iPhones & Android phones",
-        "1-Click WhatsApp chat & direct phone call buttons",
-        "Google Local Search (SEO) & Google Maps verification setup",
+        "Instant <1s load time on iPhones & Android phones globally",
+        "1-Click direct chat, inquiry routing & phone call triggers",
+        "Google Search (SEO) & regional search discovery setup",
         "100% full ownership — your domain, your content, zero lock-ins",
         "30 days of free post-launch support and minor changes",
       ],
@@ -55,10 +55,10 @@ export default function PricingAndModels() {
       subtitle: "For E-Commerce, Custom Portals & Growing Brands",
       timeline: "3 - 5 Weeks Delivery",
       desc: "For businesses that need an online store to sell products, an automated booking portal, or custom software to streamline operations.",
-      guarantee: "Founder Direct Guarantee: Zero junior coders. Siddharth personally designs, codes, and launches your platform with direct WhatsApp access.",
+      guarantee: "Founder Direct Guarantee: Zero junior coders. Siddharth personally designs, codes, and launches your platform with direct founder access.",
       features: [
         "Everything in Complete Business Website",
-        "Full mobile-friendly online store with instant UPI & card checkout",
+        "Full mobile-friendly online store with global card checkout (Stripe / Cards / UPI)",
         "Automated appointment booking & customer reservation calendar",
         "Instant WhatsApp & email notifications for every new lead or order",
         "Google Analytics & sales conversion tracking",

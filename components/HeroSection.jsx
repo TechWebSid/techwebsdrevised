@@ -90,7 +90,7 @@ export default function HeroSection() {
       title: "Consultant & Local Services",
       badge: "Astrology • Healthcare • Professional Practices",
       previewName: "Astro Ashutosh Divyadarshi",
-      previewSub: "Trusted by Clients in Lucknow, India & Worldwide (astroashutoshdivyadarshi.com)",
+      previewSub: "Trusted by Clients in India & Worldwide (astroashutoshdivyadarshi.com)",
       rating: "4.9 ★ (1,500+ Consultations Booked)",
       headline: "Accurate Vedic Astrology, Kundli Analysis & Spiritual Guidance",
       ctaLabel: "Click To Test: Book on WhatsApp",
@@ -200,7 +200,7 @@ export default function HeroSection() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500" />
           </span>
           <span className="text-xs sm:text-[13px] font-extrabold tracking-wide text-slate-800">
-            Siddharth Srivastava <span className="text-slate-400 font-normal">|</span> <span className="text-[#6938ef]">Lucknow, India Studio</span> <span className="text-slate-400 font-normal">•</span> <span className="text-emerald-600 font-bold">Taking New Projects</span>
+            Siddharth Srivastava <span className="text-slate-400 font-normal">|</span> <span className="text-[#6938ef]">India Studio • Global Delivery</span> <span className="text-slate-400 font-normal">•</span> <span className="text-emerald-600 font-bold">Taking New Projects</span>
           </span>
         </motion.div>
 
